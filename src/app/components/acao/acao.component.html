@@ -1,0 +1,45 @@
+<nav class="uk-navbar-container">
+  <div uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active">
+          <h3 class="uk-card-title ubuntu-bold h3">Ação</h3>
+        </li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav">
+        <li>
+          <button id="uk-button" class="uk-button uk-button-primary uk-margin-small-bottom"
+            (click)="goToStart()">Voltar</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div [@fadeIn] id="content">
+  <div class="uk-container">
+    <div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
+      <div *ngFor="let historia of historias">
+        <div class="uk-card uk-card-default uk-margin" id="card">
+          <h3 class="open-sans uk-card-title uk-text-center ubuntu-medium">{{ historia.titulo }}</h3>
+          <div class="uk-card-media-top">
+          </div>
+          <div class="uk-card-body" id="video">
+            <video controls style="width: 100%;" [src]="historia.video"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="ad-modal" *ngIf="mostrarAnuncio">
+  <div class="ad-content">
+    <span (click)="fecharAnuncio()">✖</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8328708503360739" data-ad-slot="7022262788"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div> -->

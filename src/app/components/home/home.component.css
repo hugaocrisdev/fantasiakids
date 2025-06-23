@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#content{
+    background-image: url('../../../assets/bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.img-half {
+    width: 50%;
+    height: 200px;
+    object-fit: contain;
+    margin-top: -20px;
+}
+
+.uk-card {
+    margin-top: 100px;
+    height: auto;
+
+}
+
+.uk-card-media-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.uk-button {
+    border: none;
+    background: linear-gradient(45deg,
+            #ff6b6b,
+            #feca57,
+            #ff9ff3,
+            #48dbfb,
+            #1dd1a1,
+            #54a0ff,
+            #5f27cd,
+            #222f3e);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.uk-button:hover {
+    box-shadow: 10px 10px 13px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.uk-container {
+    margin-top: -20px;
+}
+
+@media (max-width: 640px) {
+    .uk-card {
+        margin-top: 30px;
+        padding-top: -10px;
+    }
+
+    h3.uk-card-title {
+        font-size: 20px;
+        margin-top: -70px;
+    }
+
+    h4.ubuntu-medium {
+        font-size: 16px;
+    }
+
+    h5.ubuntu-regular {
+        font-size: 14px;
+    }
+}

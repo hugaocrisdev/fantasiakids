@@ -1,0 +1,135 @@
+<nav class="uk-navbar-container">
+    <div class="uk-container">
+        <div uk-navbar>
+            <div class="uk-navbar-left">
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="home">
+                            <img src="../../../assets/1000258473.png" alt="" class="uk-responsive-width" width="200px"
+                                id="logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+
+                    <li>
+                        <button id="uk-button" class="uk-button uk-button-primary uk-margin-small-bottom"
+                            (click)="goToHome()">Voltar</button>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div [@fadeIn] id="content">
+    <div class="text">
+        <div uk-grid class="uk-flex-center uk-grid-collapse uk-grid-match"
+            style="max-width: 1000px; margin: 0 auto; width: 100%;" id="main-cards">
+            <div class="uk-width-1-2@m uk-width-1-1@s" id="my-card">
+                <div class="uk-card uk-card-default" (mouseenter)="playSound2()">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="60" height="60" src="../../../assets/acao2.avif"
+                                    alt="Avatar">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom ubuntu-regular">Ação</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body" id="uk-card-body">
+                        <p class="ubuntu-light">Histórias eletrizantes que colocam nossos pequenos heróis em movimento!
+                            Com missões ousadas, desafios inesperados e muita coragem, essas aventuras ensinam sobre
+                            bravura, determinação e nunca desistir diante dos obstáculos.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text" (click)="goToAcao()">Ouvir Histórias</button>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2@m uk-width-1-1@s" id="my-card">
+                <div class="uk-card uk-card-default" (mouseenter)="playSound2()">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="60" height="60"
+                                    src="../../../assets/aventura1.avif" alt="Avatar">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom ubuntu-regular">Aventura</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body" id="uk-card-body">
+                        <p class="ubuntu-light">Prepare-se para explorar mundos misteriosos, mapas escondidos e
+                            criaturas
+                            fantásticas!
+                            As histórias de aventura convidam as crianças a viverem jornadas incríveis que despertam
+                            a
+                            imaginação e a sede por descobertas.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text" (click)="goToAventura()">Ouvir Histórias</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-1-2@m uk-width-1-1@s" id="my-card">
+                <div class="uk-card uk-card-default" (mouseenter)="playSound2()">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="60" height="60" src="../../../assets/esporte.jpg"
+                                    alt="Avatar">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom ubuntu-regular">Esporte</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body" id="uk-card-body">
+                        <p class="ubuntu-light">Aqui a diversão corre, salta e marca muitos pontos! As histórias de
+                            esporte
+                            celebram o
+                            trabalho em equipe, a superação e a importância de acreditar em si mesmo — tudo isso com
+                            muito movimento e energia positiva..</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text" (click)="goToEsporte()">Ouvir Histórias</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-1-2@m uk-width-1-1@s" id="my-card">
+                <div class="uk-card uk-card-default" (mouseenter)="playSound2()">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="60" height="60"
+                                    src="../../../assets/fantasaia.avif" alt="Avatar">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom ubuntu-regular">Fantasia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body" id="uk-card-body">
+                        <p class="ubuntu-light">Um universo mágico repleto de fadas, dragões, reinos encantados e muita
+                            imaginação!
+                            As histórias de fantasia transportam os pequenos leitores para lugares onde tudo é
+                            possível e cada página revela um novo encantamento.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text" (click)="goToFantasia()">Ouvir Histórias</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <audio id="hoverSound" src="som.mp3" preload="auto"></audio>
+
+    </div>
